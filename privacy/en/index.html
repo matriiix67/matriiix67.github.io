@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DawnRead Privacy Policy</title>
+  <title>PageLeaf Privacy Policy</title>
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
   <nav><a href="/">Home</a><a href="/support/en/">Support</a><span class="lang"><a href="/privacy/">简体中文</a><a href="/privacy/zh-hant/">繁體中文</a></span></nav>
-  <h1>DawnRead Privacy Policy</h1>
-  <p class="muted">Last updated: November 15, 2026</p>
-  <p>DawnRead (朝读夕拾) lets you read EPUB books, look up words in dictionaries, track your reading progress and review vocabulary. This policy explains what data the app processes, why, where it is stored and how you can control it.</p>
-  <p>DawnRead is developed and operated by Huang Jianli (黄建莉), an individual developer, who is the controller of the personal data described in this policy.</p>
+  <h1>PageLeaf Privacy Policy</h1>
+  <p class="muted">Last updated: November 20, 2026</p>
+  <p>PageLeaf (朝读夕拾) lets you read EPUB books, look up words in dictionaries, track your reading progress and review vocabulary. This policy explains what data the app processes, why, where it is stored and how you can control it.</p>
+  <p>PageLeaf is developed and operated by Huang Jianli (黄建莉), an individual developer, who is the controller of the personal data described in this policy.</p>
   <p>When you first launch the app, we show you a summary of this policy and ask for your consent. If the policy changes materially, we will ask again.</p>
 
   <h2>Data the app processes</h2>
@@ -20,57 +20,39 @@
     <li>Reading progress, reading time, bookmarks, notes, and vocabulary study and review records.</li>
     <li>App settings such as theme, font, lookup method and reminder switches.</li>
     <li>Purchase status and subscription expiration dates provided by the App Store.</li>
-    <li>Text you choose to send for AI translation, AI summary or cloud read-aloud.</li>
-    <li>The service provider, model and HTTPS endpoint you enter yourself; API keys are stored in the system Keychain.</li>
+    <li>Text you select when you use a dictionary, translate a sentence or read aloud.</li>
+    <li>Your email address, issue description and any attachments you provide when you contact support.</li>
   </ul>
 
   <h2>On-device storage</h2>
   <p>Books, reading data and most settings are stored on your device by default. Deleting the content or uninstalling the app removes the related data from the device.</p>
-  <p>Exception: API keys for AI translation and cloud read-aloud are stored in the system Keychain, only on this device, and are never synced through iCloud. Due to how iOS works, Keychain data may remain on the device after the app is uninstalled. To remove it completely, go to “Me → Privacy &amp; Data” and tap “Clear AI and Voice Credentials” before uninstalling.</p>
+  <p>Any service credentials from an earlier version are kept in this device’s system Keychain and may remain after uninstalling the app. Before uninstalling, you can go to Me → Privacy &amp; Data and use the available controls to revoke past permissions or clear credentials.</p>
 
   <h2>iCloud sync</h2>
-  <p>Paid users can choose to turn on iCloud sync. When it is on, reading data, app settings (including the selected provider, model and endpoint, but not API keys) and the book files you choose to upload are stored in the CloudKit private database of your Apple Account, so that your own devices stay in sync. Turning sync off stops further uploads; you can delete the app’s iCloud data using Apple’s iCloud storage management.</p>
+  <p>Pro users can turn on iCloud sync under Me → Sync. It stores book information, reading data and some app settings in the private CloudKit database associated with your Apple Account so your devices stay in sync. Turning on automatic book uploads also syncs EPUB files. Retained service preferences from earlier versions may sync as part of app settings. Credentials are stored only on the device. Turning off iCloud sync stops further uploads. You can delete the app’s iCloud data using Apple’s iCloud storage settings.</p>
 
-  <h2>AI translation and cloud read-aloud</h2>
-  <p>Paid users can configure MiniMax, DeepSeek, Zhipu GLM (Z.ai), Kimi or a custom HTTPS service themselves. The first time you use AI translation, AI summary or cloud read-aloud, the app explains how the data will be used and which service domain will receive it, and sends the selected text only after you allow it. Permissions are saved separately for each feature and service domain, and the app asks again if the domain changes.</p>
-  <p>Cloud services process the text they receive under their own privacy policies. If you use a custom service, you are responsible for checking where it processes data, how long it keeps it and whether it meets your compliance needs. The app sends only the selected text needed for the current request and never uploads an entire book automatically.</p>
-
-  <h2>Third-party AI service providers</h2>
-  <p>The app comes with the international API endpoints of the following providers preconfigured. Selected text is sent to a provider only after you enter that provider’s API key and agree to the data processing prompt:</p>
-  <ul>
-    <li>MiniMax: Nanonoble Pte. Ltd. (Singapore), endpoint api.minimax.io (<a href="https://platform.minimax.io/docs/guides/transparency">terms and privacy policy</a>)</li>
-    <li>DeepSeek: Hangzhou DeepSeek Artificial Intelligence Co., Ltd. (China), endpoint api.deepseek.com (<a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html">privacy policy</a>)</li>
-    <li>Zhipu GLM (Z.ai): JINGSHENG HENGXING TECHNOLOGY PTE. LTD. (Singapore), endpoint api.z.ai (<a href="https://docs.z.ai/legal-agreement/privacy-policy">privacy policy</a>)</li>
-    <li>Kimi: MOONSHOT AI PTE. LTD. (Singapore), endpoint api.moonshot.ai (<a href="https://platform.kimi.ai/docs/agreement/userprivacy">privacy policy</a>)</li>
-  </ul>
-  <p>You can also change the endpoint to another region of a provider or to another service; the text is then sent to the address you entered. Third-party services may retain request content under their privacy policies and may link requests to your account with them through the API key you provide.</p>
+  <h2>Dictionaries, translation and read-aloud</h2>
+  <p>The built-in offline dictionaries look up words on your device. The system dictionary, translation and read-aloud use Apple’s system features and process selected text according to your device settings. If both languages are downloaded, translation is processed on your device. Otherwise, Apple may process the sentence you selected. See <a href="https://www.apple.com/legal/privacy/data/en/translation/">Apple’s Translation &amp; Privacy notice</a>.</p>
 
   <h2>Where data is stored and international transfers</h2>
-  <p>The developer does not operate any server that receives your data, and the app never sends your personal data to the developer. Data leaves your device only in these cases:</p>
-  <ul>
-    <li>When iCloud sync is on, Apple stores and processes the data under the iCloud terms.</li>
-    <li>When you use AI translation, AI summary or cloud read-aloud, the selected text is sent to the servers of the provider you chose, which may be located outside your country or region (for example in Singapore, in China, or wherever your custom server is). The app shows the destination domain and asks for your consent before the first request; whether to use these features is up to you.</li>
-    <li>Purchases are handled by Apple; the developer only receives the purchase status and subscription expiration dates provided by the App Store.</li>
-  </ul>
+  <p>The developer does not operate a server that receives app data. If you contact support, the developer receives the email and any attachments you send. Apple provides iCloud, App Store purchases and system features and may process data for these services outside your country or region. See the <a href="https://www.apple.com/legal/privacy/en-ww/">Apple Privacy Policy</a>. PageLeaf uses the purchase status and subscription expiration dates Apple provides to verify access.</p>
 
   <h2>How data is used and shared</h2>
-  <p>The app processes the data above only for reading, translation, read-aloud, sync, purchases and user support. The legal bases are that the processing is necessary to provide the features you request, and your explicit consent to cloud AI processing. The app contains no advertising SDKs, does not track you across apps, and does not sell or share personal data for advertising.</p>
+  <p>The app processes data as needed to provide the reading, lookup, translation, read-aloud, review, sync and purchase features you request. The developer uses the support email you send to respond to your request. The app contains no advertising SDKs, does not track you across apps, and does not sell or share personal data for advertising.</p>
 
   <h2>Retention and deletion</h2>
   <ul>
     <li>On-device data is kept until you delete the content or uninstall the app.</li>
-    <li>API keys in the Keychain are kept until you clear credentials in “Me → Privacy &amp; Data”; uninstalling the app alone may not delete them.</li>
     <li>iCloud data is kept until you delete it in the app or with Apple’s iCloud storage management.</li>
-    <li>Cloud processing permission records are kept until you revoke them in “Me → Privacy &amp; Data” or uninstall the app.</li>
-    <li>Retention of data in third-party cloud services is governed by the respective provider’s privacy policy.</li>
+    <li>Past service permissions are retained until you revoke them or uninstall the app. Use the available controls under Me → Privacy &amp; Data to clear old credentials.</li>
     <li>Privacy and support emails are kept until the issue is resolved and for as long as necessary to meet legal obligations.</li>
   </ul>
 
   <h2 id="privacy-choices">Privacy choices</h2>
-  <p>You can turn off iCloud sync in the app’s settings; revoke all cloud processing permissions and clear AI and voice credentials in “Privacy &amp; Data”; and manage the corresponding data on the reading, bookmark, note and vocabulary review screens. To remove all data from the device, first clear AI and voice credentials in “Privacy &amp; Data”, then uninstall the app.</p>
+  <p>You can turn off iCloud sync under Me → Sync and manage your content in Library, the reader, bookmarks, notes and Study. To clean up data on your device, manage any past permissions or credentials shown under Me → Privacy &amp; Data, then uninstall the app. You can manage iCloud data separately.</p>
 
   <h2>Your rights</h2>
-  <p>Depending on the data protection laws that apply where you live (such as the GDPR in the EU and the UK), you may have the right to access, correct or delete your data, to restrict or object to processing, to data portability, and to withdraw your consent at any time. Withdrawing consent does not affect the lawfulness of processing before the withdrawal. Because this data is stored on your device or in your own iCloud, you can view it, export your notes and delete it directly in the app. If you need help, contact us using the details below. You also have the right to lodge a complaint with your local data protection authority.</p>
+  <p>Depending on the data protection laws that apply where you live (such as the GDPR in the EU and the UK), you may have the right to access, correct or delete your data, to restrict or object to processing, to data portability, and to withdraw your consent at any time. Withdrawing consent does not affect the lawfulness of processing before the withdrawal. You can view your reading data, export notes and delete content in the app. For help with information you shared with the developer, use the contact details below. You also have the right to lodge a complaint with your local data protection authority.</p>
 
   <h2>Children</h2>
   <p>The app is intended for a general audience and is not designed specifically for children. Children under 13 (or a higher age set by local law) should use the app only with the consent and guidance of a parent or guardian. If you believe a child has provided us with personal data without consent, please contact us.</p>
